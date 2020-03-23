@@ -3,7 +3,7 @@ const express = require('express');
 
 let app = express();
 
-app.listen(3000, function () {});
+app.listen(process.env.PORT || 5000, function () {});
 
 app.get(['/', '/api'], function (req, res) {
     let home = {};
